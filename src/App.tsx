@@ -1,5 +1,4 @@
 
-//const KEY = "https://open-meteo.com/v1/forecast?temperature_unit"
 
 import { Home } from "./pages/Home"
 
