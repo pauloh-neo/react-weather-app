@@ -7,13 +7,16 @@ import { WeatherData } from "../components/WeatherData";
 
 export function Home(){
 
+    const [city, setCity] = useState("Manaus");
+
+
     return(
         <main className="flex flex-col m-auto mt-20 gap-4 max-w-125 bg-cyan-100 p-4 rounded-2xl">
             <Header>
                 Weather
             </Header>
-            <FormSearch/>
-            <WeatherData/>
+            <FormSearch city={city} setCity={setCity}/>
+            <WeatherData city={city}/>
         </main>
     )
 }
